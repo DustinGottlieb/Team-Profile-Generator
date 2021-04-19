@@ -1,4 +1,4 @@
-const Manager = require("./lib/Manager")
+const Manager = require("../lib/Manager")
 
 describe("Manager", () => {
     describe("getName", () => {
@@ -9,10 +9,10 @@ describe("Manager", () => {
         })
     });
 
-    describe("getID", () => {
+    describe("getId", () => {
         it("Should return Manager's ID", () => {
             let person = new Manager("Jeff", 6584);
-            expect(person.getID()).toEqual(6584);
+            expect(person.getId()).toEqual(6584);
         })
     });
 

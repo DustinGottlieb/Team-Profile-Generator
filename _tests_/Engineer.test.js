@@ -1,4 +1,4 @@
-const Engineer = require("./lib/Engineer")
+const Engineer = require("../lib/Engineer")
 
 describe("Engineer", () => {
     describe("getName", () => {
@@ -9,10 +9,10 @@ describe("Engineer", () => {
         })
     });
 
-    describe("getID", () => {
+    describe("getId", () => {
         it("Should return enineer's ID", () => {
             let person = new Engineer("Jeff", 6584);
-            expect(person.getID()).toEqual(6584);
+            expect(person.getId()).toEqual(6584);
         })
     });
 
@@ -23,10 +23,10 @@ describe("Engineer", () => {
         })
     });
 
-    describe("getGitHub", () => {
+    describe("getGithub", () => {
         it("Should return engineer's GitHub username", () => {
             let person = new Engineer("Jeff", 6584, "jeff@smith.com", "dustingottlieb");
-            expect(person.getGitHub()).toEqual("dustingottlieb")
+            expect(person.getGithub()).toEqual("dustingottlieb")
         })
     })
 

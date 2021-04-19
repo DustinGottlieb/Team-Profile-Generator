@@ -1,4 +1,4 @@
-const Intern = require("./lib/Intern")
+const Intern = require("../lib/Intern")
 
 describe("Intern", () => {
     describe("getName", () => {
@@ -9,10 +9,10 @@ describe("Intern", () => {
         })
     });
 
-    describe("getID", () => {
+    describe("getId", () => {
         it("Should return Intern's ID", () => {
             let person = new Intern("Jeff", 6584);
-            expect(person.getID()).toEqual(6584);
+            expect(person.getId()).toEqual(6584);
         })
     });
 
